@@ -1,17 +1,11 @@
-exports.handler = async (event, context) => {
-    // Get the URL of the previous page
-    const referer = event.headers.referer;
+exports.handler = async (event) => {
 
-    console.log(referer)
-  
-    // Set the Location header to redirect the user back to the previous page
-    const response = {
-      statusCode: 302,
-      headers: {
-        Location: referer || '/'
-      }
+    console.log('here')
+    // Do something with the form data
+    // ...
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Mail submitted" }),
     };
-  
-    return response;
   };
   
