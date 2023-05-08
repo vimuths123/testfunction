@@ -1,6 +1,6 @@
 const button = document.getElementById('testbtn');
 button.addEventListener('click', function () {
-    alert('dsds')
+    // alert('dsds')
     // Make fetch request
     fetch('/.netlify/functions/submit-form', {
         method: 'POST',
