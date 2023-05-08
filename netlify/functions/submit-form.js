@@ -1,5 +1,4 @@
 exports.handler = async (event) => {
-    const formData = JSON.parse(event.body);
 
     console.log('here')
     // Do something with the form data
